@@ -1,0 +1,63 @@
+/* base page styles - tag selectors, applies to every element of that type */
+body {
+    background-color: #f5f2e9;
+    font-family: Arial, sans-serif;
+}
+
+/* headings use a handwritten-style font and are centered */
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* class: content-section, reused on every section for consistent spacing */
+.content-section {
+    padding: 15px;
+}
+
+/* flexbox container - lays the History and Hiking sections side by side */
+.section-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* each section inside the flex row takes an equal share of the width */
+.section-row .content-section {
+    flex: 1;
+}
+
+/* class: trail-photo, reused on every image for a consistent border/frame */
+.trail-photo {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #4a5d3a;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* id: page-header, unique styling for the top banner */
+#page-header {
+    background-color: #CAA182;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* id: page-footer, unique styling for the bottom bar, visually different from the header */
+#page-footer {
+    background-color: #A3B18A;
+    padding: 15px;
+    text-align: center;
+}
