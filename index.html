@@ -6,47 +6,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS loads after Bootstrap so it can override defaults when needed -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Mines of Spain</title>
 </head>
 <body>
 
-    <header id="page-header">
-        <h1>Mines of Spain</h1>
+    <header id="page-header" class="text-center py-4">
+        <div class="container">
+            <h1 class="mb-3">Mines of Spain</h1>
 
-        <nav aria-label="Main navigation">
-            <a href="index.html" aria-current="page">Mines of Spain home</a>
-            <a href="page2.html">Wildlife at Mines of Spain</a>
-        </nav>
+            <nav class="d-flex justify-content-center gap-2 flex-wrap" aria-label="Main navigation">
+                <a href="index.html" class="btn btn-outline-light" aria-current="page">Mines of Spain home</a>
+                <a href="page2.html" class="btn btn-outline-light">Wildlife at Mines of Spain</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container my-4">
 
-        <section class="content-section">
-            <h2>Explore Mines of Spain</h2>
-            <p>Mines of Spain is basically Dubuque's backyard wilderness, tucked right along the south edge of town where the bluffs meet the Mississippi. It's one of those spots that feels way bigger than it actually is once you're out on the trails, even though it's technically still within city limits.</p>
+        <section class="content-section mb-4">
+            <h2 class="text-center mb-3">Explore Mines of Spain</h2>
+            <p class="lead">Mines of Spain is basically Dubuque's backyard wilderness, tucked right along the south edge of town where the bluffs meet the Mississippi. It's one of those spots that feels way bigger than it actually is once you're out on the trails, even though it's technically still within city limits.</p>
 
-            <img src="images/trail-view.png" class="trail-photo" alt="A wooded trail with wooden steps and railings at Mines of Spain" width="500">
+            <img src="images/trail-view.png"
+                 class="trail-photo img-fluid d-block mx-auto"
+                 alt="A wooded trail with wooden steps and railings at Mines of Spain"
+                 width="500">
         </section>
 
-        <div class="section-row">
-            <section class="content-section">
-                <h2>How It Got Its Name</h2>
-                <p>It's named after Julien Dubuque, the guy the city itself is named for, who struck a deal with the Spanish government to mine lead here. Locals still visit his monument up on the bluff overlooking the river, and it's one of the best views in town, especially around sunset.</p>
+        <div class="row g-4">
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">How It Got Its Name</h2>
+                    <p>It's named after Julien Dubuque, the guy the city itself is named for, who struck a deal with the Spanish government to mine lead here. Locals still visit his monument up on the bluff overlooking the river, and it's one of the best views in town, especially around sunset.</p>
 
-                <img src="images/view-second-level.png" class="trail-photo" alt="Rocky bluffs above a wooded trail at Mines of Spain" width="500">
+                    <img src="images/view-second-level.png"
+                         class="trail-photo img-fluid d-block mx-auto"
+                         alt="Rocky bluffs above a wooded trail at Mines of Spain"
+                         width="500">
+                </div>
             </section>
 
-            <section class="content-section">
-                <h2>Hiking and Nature Today</h2>
-                <p>The park itself is this sprawling mix of woods, prairie, and wetland that most people around here use for hiking or just getting outside. There's a solid network of trails that wind through the bluffs and along Catfish Creek, and in winter it turns into one of the go to spots for cross country skiing. The E.B. Lyons Center is where you'd stop first if you want the history and nature side of things, with exhibits on the old lead mining days and the area's natural history, run largely by local volunteers.</p>
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">Hiking and Nature Today</h2>
+                    <p>The park itself is this sprawling mix of woods, prairie, and wetland that most people around here use for hiking or just getting outside. There's a solid network of trails that wind through the bluffs and along Catfish Creek, and in winter it turns into one of the go to spots for cross country skiing. The E.B. Lyons Center is where you'd stop first if you want the history and nature side of things, with exhibits on the old lead mining days and the area's natural history, run largely by local volunteers.</p>
+                </div>
             </section>
         </div>
 
     </main>
 
-    <footer id="page-footer">
-        <p><a href="page2.html">Learn about wildlife at Mines of Spain</a></p>
+    <footer id="page-footer" class="mt-5 py-3">
+        <div class="container text-center">
+            <a href="page2.html" class="btn btn-success">Learn about wildlife at Mines of Spain</a>
+        </div>
     </footer>
 
 </body>
