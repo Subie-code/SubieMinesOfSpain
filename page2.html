@@ -6,68 +6,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS loads after Bootstrap so it can override defaults when needed -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Wildlife at Mines of Spain</title>
 </head>
 <body>
 
-    <header id="page-header">
-        <h1>Wildlife at Mines of Spain</h1>
+    <header id="page-header" class="text-center py-4">
+        <div class="container">
+            <h1 class="mb-3">Wildlife at Mines of Spain</h1>
 
-        <nav aria-label="Main navigation">
-            <a href="index.html">Mines of Spain home</a>
-            <a href="page2.html" aria-current="page">Wildlife at Mines of Spain</a>
-        </nav>
+            <nav class="d-flex justify-content-center gap-2 flex-wrap" aria-label="Main navigation">
+                <a href="index.html" class="btn btn-outline-light">Mines of Spain home</a>
+                <a href="page2.html" class="btn btn-outline-light" aria-current="page">Wildlife at Mines of Spain</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container my-4">
+        <div class="row g-4">
 
-        <section class="content-section">
-            <h2>Animals You May See</h2>
-            <p>As far as wildlife goes, it's one of those spots where you never quite know what you'll run into. Deer are everywhere, especially early morning or right before dusk, and it's not unusual to spot wild turkey wandering through the underbrush.</p>
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">Animals You May See</h2>
+                    <p>As far as wildlife goes, it's one of those spots where you never quite know what you'll run into. Deer are everywhere, especially early morning or right before dusk, and it's not unusual to spot wild turkey wandering through the underbrush.</p>
 
-            <img src="images/view-second-level.png" class="trail-photo" alt="Rocky bluffs above a wooded trail at Mines of Spain" width="500">
+                    <img src="images/view-second-level.png"
+                         class="trail-photo img-fluid d-block mx-auto"
+                         alt="Rocky bluffs above a wooded trail at Mines of Spain"
+                         width="500">
 
-            <ul>
-                <li>Bald eagles</li>
-                <li>White-tailed deer</li>
-                <li>Wild turkey</li>
-                <li>Bobcats</li>
-            </ul>
-        </section>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">Bald eagles</li>
+                        <li class="list-group-item">White-tailed deer</li>
+                        <li class="list-group-item">Wild turkey</li>
+                        <li class="list-group-item">Bobcats</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="content-section">
-            <h2>Bobcats and Bald Eagles</h2>
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">Bobcats and Bald Eagles</h2>
 
-            <img src="images/bobcat.png" class="trail-photo" alt="A bobcat standing in a snowy woodland" width="500">
+                    <img src="images/bobcat.png"
+                         class="trail-photo img-fluid d-block mx-auto"
+                         alt="A bobcat standing in a snowy woodland"
+                         width="500">
 
-            <p>Bald eagles hang around the river bluffs a lot, so if you're up on one of the overlooks you'll probably catch one gliding by. People who spend more time out there talk about seeing bobcats every once in a while, though that's more of a lucky sighting than something you'd count on.</p>
-        </section>
+                    <p class="mt-3">Bald eagles hang around the river bluffs a lot, so if you're up on one of the overlooks you'll probably catch one gliding by. People who spend more time out there talk about seeing bobcats every once in a while, though that's more of a lucky sighting than something you'd count on.</p>
+                </div>
+            </section>
 
-        <section class="content-section">
-            <h2>Birds and Pollinators</h2>
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">Birds and Pollinators</h2>
 
-            <img src="images/wildlife.png" class="trail-photo" alt="A great blue heron standing in shallow water among green reeds" width="500">
+                    <img src="images/wildlife.png"
+                         class="trail-photo img-fluid d-block mx-auto"
+                         alt="A great blue heron standing in shallow water among green reeds"
+                         width="500">
 
-            <p>The butterfly garden near the nature center draws in a ton of pollinators in the warmer months, and the birdwatchers around town treat this place like one of the best spots in the area, since the mix of woods, wetland, and prairie brings in so many different species passing through.</p>
+                    <p class="mt-3">The butterfly garden near the nature center draws in a ton of pollinators in the warmer months, and the birdwatchers around town treat this place like one of the best spots in the area, since the mix of woods, wetland, and prairie brings in so many different species passing through.</p>
 
-            <img src="images/yellow-breasted-chat.png" class="trail-photo" alt="A yellow-breasted chat perched on a branch" width="500">
-        </section>
+                    <img src="images/yellow-breasted-chat.png"
+                         class="trail-photo img-fluid d-block mx-auto"
+                         alt="A yellow-breasted chat perched on a branch"
+                         width="500">
+                </div>
+            </section>
 
-        <section class="content-section">
-            <h2>Best Times to Visit</h2>
-            <ol>
-                <li>Fall, for cooler weather and the changing leaves</li>
-                <li>Spring, when the flowers and butterflies are out</li>
-                <li>Winter, if you're into skiing or snowy quiet trails</li>
-                <li>Summer, for green scenery and longer daylight; check current trail conditions before visiting</li>
-            </ol>
-        </section>
+            <section class="col-md-6">
+                <div class="content-section h-100">
+                    <h2 class="text-center mb-3">Best Times to Visit</h2>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Fall, for cooler weather and the changing leaves</li>
+                        <li class="list-group-item">Spring, when the flowers and butterflies are out</li>
+                        <li class="list-group-item">Winter, if you're into skiing or snowy quiet trails</li>
+                        <li class="list-group-item">Summer, for green scenery and longer daylight; check current trail conditions before visiting</li>
+                    </ol>
+                </div>
+            </section>
 
+        </div>
     </main>
 
-    <footer id="page-footer">
-        <p><a href="index.html">Return to the Mines of Spain home page</a></p>
+    <footer id="page-footer" class="mt-5 py-3">
+        <div class="container text-center">
+            <a href="index.html" class="btn btn-success">Return to the Mines of Spain home page</a>
+        </div>
     </footer>
 
 </body>
